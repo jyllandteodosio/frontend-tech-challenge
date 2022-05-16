@@ -9,7 +9,8 @@
 </head>
 <body>
   <div>
-    Use this template to solve the challenge.
+    <div id="app">
+    </div>
   </div>
   <script src="{{ asset('js/app.js') }}"></script>
 </body>
