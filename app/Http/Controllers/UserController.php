@@ -17,20 +17,17 @@ class UserController extends Controller
     {
         // GET /users
 
-        // Get all records
-        $users = User::all();
-
-        Log::debug($users);
-
         // Set default response
-        $response_text = "Users retrieved successfully.";
         $response_code = Response::HTTP_OK;
 
         // Return response
         return response()->json([
-            'users' => $users,
-            'response_text' => $response_text,
-            'response_code' => $response_code
-        ]);
+            'users' => $this->getAllRecords(),
+        ], $response_code);
+    }
+
+    public function getAllRecords()
+    {
+        return User::all();
     }
 }

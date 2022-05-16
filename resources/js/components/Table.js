@@ -39,8 +39,12 @@ const Table = () => {
   return (
     <>
       <table className="table md:table-fixed">
-        <TableHead columns={columns} handleSorting={handleSorting} />
-        <TableBody columns={columns} tableData={tableData} />
+        <TableHead
+        columns={columns}
+        handleSorting={handleSorting} />
+        <TableBody
+        columns={columns}
+        tableData={tableData} />
       </table>
     </>
   );
