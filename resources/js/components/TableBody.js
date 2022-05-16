@@ -6,7 +6,7 @@ const TableBody = ({ tableData, columns }) => {
       <tr key={data.id}>
        {columns.map(({ accessor }) => {
         const tData = data[accessor] ? data[accessor] : "——";
-        return <td key={accessor}>{tData}</td>;
+        return <td key={accessor} className={"border px-4 py-2 font-medium"}>{tData}</td>;
        })}
       </tr>
      );

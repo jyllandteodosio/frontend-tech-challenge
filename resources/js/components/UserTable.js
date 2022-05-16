@@ -4,11 +4,9 @@ import Table from "./Table";
 
 function UserTable() {
   return (
-    <div className="container mt-5">
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <Table />
-        </div>
+    <div className="flex justify-center items-center h-screen">
+      <div className="max-w-3xl">
+        <Table />
       </div>
     </div>
   );

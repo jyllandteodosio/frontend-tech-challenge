@@ -27,7 +27,7 @@ const TableHead = ({ columns, handleSorting }) => {
             <th
               key={accessor}
               onClick={sortable ? () => handleSortingChange(accessor) : null}
-              className={cl}
+              className={cl + " border px-4 py-2"}
             >
               {label}
             </th>
